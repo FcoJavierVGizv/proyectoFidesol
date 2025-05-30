@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Países</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Consulta de Países</h1>
+
+  <div>
+    <button id="verTodos">Mostrar todos los países</button>
+    <input type="text" id="nombreInput" placeholder="Buscar por nombre" />
+    <button id="buscarNombre">Buscar</button>
+
+    <select id="filtroContinente">
+      <option value="">Selecciona un continente</option>
+      <option value="europe">Europa</option>
+      <option value="asia">Asia</option>
+      <option value="americas">América</option>
+      <option value="africa">África</option>
+      <option value="oceania">Oceanía</option>
+    </select>
+  </div>
+
+  <div>
+    <input type="number" id="poblMin" placeholder="Población mínima" />
+    <input type="number" id="poblMax" placeholder="Población máxima" />
+    <input type="text" id="idiomaInput" placeholder="Idioma (ej: spanish)" />
+    <button id="filtrar">Filtrar por población e idioma</button>
+  </div>
+
+  <div id="resultado"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
